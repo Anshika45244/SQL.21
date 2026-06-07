@@ -1,0 +1,46 @@
+CREATE DATABASE: CREATE DATABASE company;
+USE : USE company;
+ALTER DATABASE: ALTER DATABASE company;
+DROP DATABASE:DROP DATABASE company;
+CREATE
+CREATE TABLE EMPLOYEES (
+employee_id INT PRIMARY KEY;
+first_name VARCHAR(50),
+last_name VARCHAR(50),
+department VARCHAR(50),
+salary DECIMAL(10,2);
+INSERT INTO 
+INSERT INTO employees(employee_id,first_name,last_name,department,salary)
+VALUES
+(1,'John','Doe','HR',50000),
+(2,'Johni','Dove','HR',60000),
+(3,'Alka','Verma','FINANACE',55000),
+(4,'Joy','Tiwari','IT',62000),
+(5,'Neha','tr','IT',48000),
+ALTER TABLE
+ALTER TABLE employees
+ADD COLUMN new_column INT;
+DROP TABLE
+DROP TABLE employees;
+Reading/Querying Data in SQL 
+SELECT 
+SELECT*FROM employees;
+DISTINCT department FROM employees;
+LIMIT 
+SELECT *FROM employees LIMIT 3;
+WHERE
+SELECT*FROM employees WHERE salary>55000.00;
+OFFSET 
+SELECT *FROM employees FETCH FIRST 3 ROWS ONLY;
+FETCH 
+SELECT*FROM employees FETCH FIRST 3 ROWS ONLY;
+CASE
+SELECT
+first_name,
+last_name,
+CASE
+WHEN salary>55000 THEN 'High'
+WHEN salary >50000 THEN 'Medium'
+ELSE'Low'
+END AS salary_category
+FROM employees;
