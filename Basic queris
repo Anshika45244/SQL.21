@@ -1,0 +1,110 @@
+Select all columns and rows
+SELCT*
+FROM JOBS
+SELECT*
+FROM RELIGIONS
+"*" means >>>>>>>>>> all columns
+columns and rows appears in arbitrary order
+Selecting all columns and rows 
+  Selecting Specific Columns
+  SELECT TITLE 
+  FROM JOBS
+  SELECT TITLE ,JOB
+  FROM JOBS
+  SELECT *, JOB
+  FROM JOBS
+  >>>>>>> columns name are separated by commas<<<<<<<<<<
+    rows appears in arnitrary order
+    Selecting Specific Columns 
+    SELECT *
+    FROM table JOBS
+    Selecting Specific Rows 
+    Selecting Specific Rows 
+    =,<>,<,>,<=,>=
+    A column name is specified  on the left 
+    An operator is specified in the middle
+    Selecting Specific Rows 
+    SELECT COUNTRY ,AREA 
+    FROM COUNTRIES
+    WHERE AREA >300000
+  
+    SELECT NAME , BDATE
+    FROM PERSONS
+    WHERE BDATE<'1300-01-01'
+
+    SELECT NAME ,COUNTRY
+    FROM PERSONS 
+    WHERE COUNTRY ='RUSSIA'
+
+    >>>>>>>>>WHERE is use for the comparison<<<<<<<<
+      Sorting Rows
+      >>>>>>>> use ORDER BY clause
+      SELECT COUNTRY,AREA
+      FROM COUNTRIES 
+      ORDER BY AREA 
+      SELECT COUNTRY,AREA 
+      FROM COUNTRIES 
+      ORDER BY 2
+      SELECT COUNTRY ,AREA
+      FROM COUNTRIES
+      ORDER BY AREA DESC
+      SELECT LANGUAGE ,POP
+      FROM COUNTRIES
+      ORDER BY LANGUAGE
+      SELECT LANUAGE ,POP
+      FROM COUNTRIES
+      ORDER BY LANGUAGE ,POP DESC;
+        SELECT *
+        FROM table JOBS
+        WHERE AREA>3000000
+        ORDER BY LANGUAGE DESC,COUNTRY;
+  Eliminating duplicate rows
+          SELECT RELIGION
+          FROM RELIGIONS
+          WHERE PERCENT = 100
+          ORDER BY RELIGION;
+
+           SELECT DISTINCT RELIGION
+           FROM GELIGIONS
+           WHERE PERCENT = 100
+           ORDER BY RELIGION;
+           >>>>>>>>>DISTINCT is entered after the keyword SELECT 
+          eliminates duplicate once in a query
+          Eliminating duplicate ROws 
+          SELECT*
+          FROM JOBS
+WHERE AREA>3000000
+ORDER BY LANGUAGE DESC, COUNTRY ;
+SELECT DISTINCT JOBS
+FROM PERSON;
+
+SELECT DISTINCT LANGUAGE 
+FROM LANGUAGES 
+WHERE LITERACY_RATE<30
+ORDER BY LANGUAGE;
+
+SELECT DISTINCT COUNTRY 
+FROM PERSONS
+WHERE JOB = 'Scientist'
+ORDER BY COUNTRY;
+ADVANCED OPERATORS
+  LIKE,AND,BETWEEN ,OR,IN,IS NULL,Precedence and Negation
+    SELECT NAME,COUNTRY
+    FROM PERSONS 
+    WHERE NAME LIKE 'Z%';
+    SELECT NAME ,COUNTRY 
+    FROM PERSONS 
+    WHERE NAME LIKE 'EINST--N';
+    SELECT NAME ,COUNTRY 
+    FROM PERSONS
+    WHERE NAME LIKE '%ST--N%';
+SELECT * 
+FROM JOBS
+WHERE AREA>3000000
+ORDER BY LANGUAGE DESC , COUNTRY
+    
+
+
+
+    
+    
