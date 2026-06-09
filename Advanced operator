@@ -1,0 +1,98 @@
+SELECT NAME ,COUNTRY 
+FROM PERSONS
+WHERE NAME LIKE 'Z%'
+
+SELECT NAME , COUNTRY
+FROM PERSONS
+WHERE NAME LIKE'EINST--N';
+AND OPERATOR
+
+  SELECT NAME ,BDATE
+  FROM PERSONS
+  WHERE NAME LIKE 'A%'
+  AND BDATE >='1900-01-01'
+    SELECT COUNTRY,GNP
+    FROM COUNTRIES
+    WHERE GNP>=1000
+    AND GNP <=2000
+      AND>>>>>>>>>combine two comparisons>>>>
+      both must be true
+      BETWEEN OPERATOR
+      SELECT COUNTRY,LITERACY
+      FROM COUNTRIES
+      WHERE LITERACY>=55
+      AND LITERACY <= 60
+      ORDER BY LITERACY
+
+      SELECT COUNTRY , LITERACY 
+      FROM COUNTRIES
+      WHERE LITERACY BETWEEN 55 AND 60 
+      ORDER BY LITERACY
+BETWEEN >>> RANGE >>>EACH COLUMN
+        2ND VALUE MUST BE GRATER THEN 1ST ONE
+        OR OPERATOR  
+        SELECT COUNRTRY ,LANGUAGE
+        FROM COUNTRIES 
+        WHERE COUNTRY ='GHANA'
+        OR COUNTRY ='USA'
+        OR COUNTRY ='FIJI'
+
+        SELECT COUNTRY ,LANGUAGE
+        FROM COUNTRIES
+        WHERE COUNTRY ='GHANA'
+        OR NAME='CALVAN'
+>>>>"OR" >>>COMBINE TWO COMPARISONS
+          Either or both comparisons must evaluate to true
+
+          IN OPERATOR
+           SELECT NAME ,BDATE 
+           FROM PERSONS 
+           WHERE NAME ='HUGO'
+           OR NAME ='POE'
+           OR NAME ='DAHL'
+      SELECT NAME , BDATE 
+      FROM PERSONS
+      WHERE NAME IN ('POE','HUGO','DAHL')
+        >>>>>>IN>>>  compares each column value to a list 
+        the list is enclosed in parentheses
+        values in the list are separated by commas '
+        SELECT NAME 
+        FROM PERSONS
+        WHERE NAME IN('Einstein','Galilei','Newton');
+
+        ********THE NULL OPERATOR**************
+        SELECT COUNTRY ,POP
+        FROM COUNTRIES
+        WHERE POP IS NULL
+        SELECT NAME ,BDATE 
+          FROM PERSONS
+          WHERE COUNTRY ='IRON'
+          AND BDATE IS NULL 
+          >>>>>>>>>NULL>>>>>> IT IS MISSING VALUES,NOT SAME AS BLANKS
+            NOT SAME AS ZERO, IA NULL LOCATES NULL VALUE
+
+            Percendence and Negation 
+              SELECT JOB ,NAME
+              FROM PERSONS
+              WHERE COUNTRY ='ITALY'
+              AND (JOB= 'S' OR JOB ='W')
+              ORDER BY JOB ,NAME 
+              SELECT JOB, NAME 
+              FROM PERSONS
+              WHERE COUNTRY='ITALY'
+              AND NOT(JOB ='S' OR JOB = 'W')
+              ORDER BY JOB,NAME 
+                
+                
+                
+              
+        
+        
+
+             
+          
+        
+        
+        
+      
+      
