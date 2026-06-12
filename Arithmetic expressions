@@ -1,0 +1,67 @@
++ add
+- subtract 
+* multiply
+/ divide
+() precedence
+operands can be numeric values or column names
+operators are specified between operands
+expressions in parentheses are evaluated first 
+SELECT COUNTRY ,POP/AREA 
+FROM COUNTRIES
+WHERE LANGUAGE ='GERMAN'
+ORDER BY COUNTRY
+
+SELECT COUNTRY,GNP*1.1
+FROM COUNTRIES
+Expressions are specified in the SELECT  clause
+Expressions produce new columns in the result 
+Expressions are calculated for each row 
+Expressions in other clauses 
+SELECT COUNTRY , POP /AREA 
+FROM COUNTRIES 
+WHERE POP/AREA >2000
+
+SELECT COUNTRY,POP/AREA 
+FROM COUNTRIES
+WHERE POP/AREA >2000
+ORDER BY POP/AREA DESC
+Expressions can be used in where clause 
+Expressions can be used in the Order by clause
+
+
+expression in other clauses
+SELECT * LANGUAGE ,COUNTRY 
+POP/AREA 
+FROM JOBS
+WHERE AREA >3000000
+POP/AREA>300
+POP/AREA DESC
+Column aliases
+SELECT COUNTRY,POP/AREA
+FROM COUNTRIES
+WHERE POP/AREA>2000
+ORDER BY POP/AREA DESC
+
+SELECT COUNTRY,
+POP/AREA AS DENSITY 
+FROM COUNTRIES
+WHERE DENSITY>2000
+ORDER BY POP /AREA DESC
+Column aliases are defined in the SELECT clause
+Aliases can be used in the WHERE clause 
+Aliases can be used in the Order BY clause
+AS is optional in some dialects
+
+COLUMN ALIASES
+SELECT *LANGUAGE AS LANG,COUNTRY
+POP/AREA AS DENSITY
+FROM JOBS
+WHERE AREA>3000000
+POP/AREA,3
+ORDER BY LANGUAGE DESC,COUNTRY
+1 DESC,3
+POP/AREA DESC
+
+
+
+
