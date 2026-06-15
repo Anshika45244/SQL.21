@@ -1,0 +1,85 @@
+statiscal function
+grouping 
+fxn in other clauses
+>>>>statistical function
+count()
+sum()
+min()
+max()
+avg()
+statistical parameter accept parameter 
+statistical functions return summary values 
+Count accept a variety of parameter 
+SELECT AVG (POP)
+FROM COUNTRIES
+WHERE LANGUAGE ='ENGLISH'
+
+SELECT MIN(POP)AS LOWEST,
+MAX(POP) AS HIGHEST
+FROM COUNTRIES
+WHERE LANGUAGE='ENGLISH'
+ SELECT *LANGUAGE AS LANG ,COUNTRY
+ POP/AREA AS DENSITY
+ MIN(POP) AS LOWEST
+ FROM JOBS
+ WHERE AREA>200000
+ ORDER BY LANGUAGE DESC,COUNTRY
+ 1 DESC,3
+ POP/AREA DESC
+
+ GROUPING
+ SELECT JOB,
+ COUNT(*)AS TOTAL 
+ FROM PERSONS
+ WHERE GENDER='MALE'
+ GROUP BY JOB
+ ORDER BY JOB
+
+ SELECT JOB, COUNTRY ,
+ COUNT(*) AS TOTAL 
+ FROM PERSONS
+ WHERE GENDER ='MALE'
+ GROUP BY JOB,COUNTRY 
+ ORDER BY JOB ,COUNTRY
+
+>>>>>IT IS SPECIFIED IN SELECT CLAUSE, repeated in the GROUP BY clause and follow FROM and WHERE clauses
+SELECT*JOB , COUNTRY,
+POP/AREA AS DENSITY
+MIN(POP) AS LOWEST 
+FROM JOBS 
+WHERE AREA>3000000
+GROUP BY JOB,COUNTRY 
+LANGUAGE DESC,COUNTRY 
+1 DESC ,3
+POP/AREA DESC
+
+
+Functions in other clauses 
+SELECT JOB,COUNT(*)
+FROM PERSONS
+WHERE GENDER='MALE'
+GROUP BY JOB 
+ORDER BY COUNT(*)DESC
+ SELECT JOB,COUNT(*)AS  TOTAL 
+ FROM PERSONS 
+ WHERE GENDER ='MALE'
+ GROUP BY JOB
+ ORDER BY TOTAL DESC
+
+ >>>>>>FUNCTION CAN BE USED IN order by CLAUSE
+ entered directly 
+ can be referenced via column aliases
+
+
+ SELECT JOB, COUNT(*)AS TOTAL 
+ FROM PERSONS
+ WHERE GENDER ='MALE'
+ GROUP BY JOB 
+ HAVING TOTAL >30 
+ ORDER BY TOTAL DESC
+
+ >>>>>>HAVING  clause follows GROUP BY clause 
+ just like WHERE
+ it executed after Grouping
+ 
+ 
