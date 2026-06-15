@@ -1,0 +1,41 @@
+multi table queries
+JOIN
+propces to join two or more table
+> list all required table in FROM clause
+>enter appropriate comparions in the WHERE clause 
+>specify which column should appear in the result in the SELECT clause
+
+SELECT PERSON,NAME,PERSONS.JOB,TITLE
+FROM PERSONS,JOBS
+WHERE PERSONS.JOB=JOBS.JOB
+>>>multiple table are specified in the From clause 
+joim comparision entered in WHERE clause
+full column names are employed as necessay
+
+table alieases are defined in the FREOM clause 
+Table aliases can be used in any clause 
+once an alias is dedined , the original cannot be used 
+AS is optional in some dialects
+
+UNIONS
+SELECT COUNTRY
+FROM COUNTRIES
+WHERE POP>20000000000
+ UNION
+ SELECT COUNTRY
+ FROM RELIGIONS
+ WHERE RELIGION ='ATHESIM'
+ AND PERCENT>30
+
+
+
+the number and the type of columns must match
+UNION keyword is placed between th equeries
+ORDER BY , if used , must be the last clause 
+ORDER BY must specify column positions
+ORDER BY  must specify column postions
+Duplicate rows are not included in the result
+
+
+
+
