@@ -1,0 +1,21 @@
+inserting rows
+INSERT 
+INTO COUNTRIES (COUNTRY , LITERACY,AREA,POP)
+VALUES('BEULAH',100,1146807,144000)
+
+UPDATEING ROWS 
+UPDATE COUNTRIES
+SET AREA = 53501998,LANGUAGE='HEBREW',POP= 1000000
+WHERE COUNTRY ='BEULAH'
+a table name is specified in the UPDATE clause
+new value specified in the SET clause
+the WHERE clause specifies which rows to update
+omitting the WHERE clause updates all rows 
+
+DELETING ROWS
+DELETE 
+FROM COUNTRIES
+WHERE COUNTRY ='Yugoslavia'
+
+
+
